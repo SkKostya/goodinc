@@ -27,8 +27,7 @@
 	&__item{
 		display: inline;
 		float: left;
-		width: 5%;
-		padding: 1%;
+		width: 7%;
 		text-align: center;
 		margin-left: 1%;
 		margin-top: 9px;
@@ -42,10 +41,14 @@
 	&__link{
 		color: #fff;
 		text-decoration: none;
+		display: block;
+		height: 26px;
+		padding-top: 11px;
 		&:hover{
 			color: $blue;	
 		}
 	}
+
 	&__search{
 		height: 30px;
 	}
@@ -65,5 +68,32 @@
 	&__arrow{
 		position: relative;
 		top: 12.5px;
+		border: none;
+		margin-top: -5px;
+		background: linear-gradient(to top, black, #202020);
+	}
+
+	&__computer{
+		background-image: url(../images/computer.png);
+		height: 250px;
+	}
+	&__exclusive{
+		color: #32a9e7;
+		font-size: 1.8em;
+		padding-top: 45px;
+		padding-left: 10%;
+	}
+	&__purchase{
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #fff;
+		background-color: $black;
+		padding: 1%;
+		width: 25%;
+		text-align: center;
+		box-shadow: 1px 1px #fff;
+		border-radius: 5px;
+		margin-top: 30px;
+		margin-left: 10.5%;
 	}
 }
