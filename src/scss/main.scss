@@ -4,6 +4,7 @@
 .wrapper{
 	width: 1100px;
 	margin: 0 auto;
+	z-index: 0;
 }
 
 .header{
@@ -22,7 +23,6 @@
 	}
 	&__list{
 		list-style-type: none;
-
 	}
 	&__item{
 		display: inline;
@@ -95,5 +95,64 @@
 		border-radius: 5px;
 		margin-top: 30px;
 		margin-left: 10.5%;
+	}
+
+	&__page{
+		background-color: $black;
+		padding: 2%;
+	}
+	&__container{
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__roll{
+		border-radius: 50%;
+		border: 5px solid grey;
+		display: inline;
+		margin-left: 0.3em;
+		padding: 0% 0.8% 0% 0.8%;
+		&:hover{
+			border: 5px solid $blue;
+		}
+	}
+
+	&__btn{
+		padding: 1%;
+		width: 3.5%;
+		background-color: $black;
+		border: 1px solid black;
+		box-shadow: 0 0 1px 0.2px #fff;
+		border-radius: 50%;
+		position: relative;
+		&:focus{
+			outline: 0;
+		}
+		&_left{
+			float: left;
+			top: -10px;
+			margin-left: 2%;
+		}
+		&_right{
+			float: right;
+			top: -25px;
+			margin-right: 2%;
+		}
+	}
+	&__right,&__left{
+		margin: 0 auto;
+		width: 1%;
+		height: 11px;
+		border-top: 3px solid grey;
+		border-left: 3px solid grey;
+		&:hover{
+			border-top: 3px solid $blue;
+			border-left: 3px solid $blue;
+		}
+	}
+	&__left{
+		transform: rotate(-45deg);
+	}
+	&__right{
+		transform: rotate(135deg);
 	}
 }
