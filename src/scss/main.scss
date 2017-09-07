@@ -161,3 +161,67 @@
 		}
 	}
 }
+
+.main{
+	&__gradient{
+		height: 60px;
+		background: linear-gradient(to top, white, #c1c0c0);
+	}
+
+	&__text{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	&__service{
+		width: 47.5%;
+	}
+	&__welcome{
+		color: $blue;
+		font-weight: bold;
+		font-size: 2.5em;
+		font-family: Futura-Heavy;
+	}
+	&__greytext{
+		color: #ababab;
+		font-family: Futura-Heavy;
+	}
+	&__images{
+		float: left;
+		width: 15%;
+		margin-left: 3.5%;
+	}
+	&__img{
+		margin-top: 25px;
+		&_margin{
+			margin-left: 6%;
+		}
+	}
+	&__catalog{
+		width: 65%;
+		margin-top: 25px;
+		margin-left: 25%;
+	}
+	&__list{
+		list-style-type: none;
+		font-family: MyriadPro-Regular;
+	}
+	&__item{
+		margin-top: 20px;
+	}
+	&__more{
+		width: 30%;
+		text-align: center;
+		padding: 10px 0 10px 0;
+		margin-left: 70%;
+		margin-top: -20px;
+		border-radius: 5px;
+		background: linear-gradient(to top, $black, grey);
+	}
+	&__roll{
+		text-decoration: none;
+		color: #fff;
+		font-family: Futura-Heavy;
+		display: block;
+	}
+}
