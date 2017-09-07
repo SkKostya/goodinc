@@ -129,30 +129,35 @@
 		}
 		&_left{
 			float: left;
-			top: -10px;
+			top: -12px;
 			margin-left: 2%;
+			padding-left: 2%;
+			padding-right: 1.7%;
 		}
 		&_right{
 			float: right;
-			top: -25px;
+			top: -27px;
+			width: 4%;
 			margin-right: 2%;
-		}
-	}
-	&__right,&__left{
-		margin: 0 auto;
-		width: 1%;
-		height: 11px;
-		border-top: 3px solid grey;
-		border-left: 3px solid grey;
-		&:hover{
-			border-top: 3px solid $blue;
-			border-left: 3px solid $blue;
+			padding-left: 0.2%;
 		}
 	}
 	&__left{
 		transform: rotate(-45deg);
+		height: 17px;
+		width: 17px;
+		box-shadow: -5px -4px 0 0 grey, -4px -5px 0 0 grey;
+		&:hover{
+			box-shadow: -5px -4px 0 0 $blue, -4px -5px 0 0 $blue;
+		}
 	}
 	&__right{
 		transform: rotate(135deg);
+		height: 17px;
+		width: 17px;
+		box-shadow: -5px -4px 0 0 grey, -4px -5px 0 0 grey;
+		&:hover{
+			box-shadow: -5px -4px 0 0 $blue, -4px -5px 0 0 $blue;
+		}
 	}
 }
