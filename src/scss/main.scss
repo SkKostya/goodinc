@@ -109,7 +109,7 @@
 		border-radius: 50%;
 		border: 5px solid grey;
 		display: inline;
-		margin-left: 0.3em;
+		margin-left: 0.2em;
 		padding: 0% 0.8% 0% 0.8%;
 		&:hover{
 			border: 5px solid $blue;
@@ -117,9 +117,12 @@
 	}
 
 	&__btn{
-		padding: 1%;
+		font-size: 3em;
+		color: grey;
+		font-weight: bold;
 		width: 3.5%;
 		background-color: $black;
+		height: 40px;
 		border: 1px solid black;
 		box-shadow: 0 0 1px 0.2px #fff;
 		border-radius: 50%;
@@ -127,38 +130,24 @@
 		&:focus{
 			outline: 0;
 		}
+		&:hover{
+			color: $blue;
+		}
 		&_left{
 			float: left;
 			top: -12px;
+			width: 4%;
 			margin-left: 2%;
-			padding-left: 2%;
-			padding-right: 1.7%;
 		}
 		&_right{
 			float: right;
 			top: -27px;
 			width: 4%;
 			margin-right: 2%;
-			padding-left: 0.2%;
 		}
 	}
-	&__left{
-		transform: rotate(-45deg);
-		height: 17px;
-		width: 17px;
-		box-shadow: -5px -4px 0 0 grey, -4px -5px 0 0 grey;
-		&:hover{
-			box-shadow: -5px -4px 0 0 $blue, -4px -5px 0 0 $blue;
-		}
-	}
-	&__right{
-		transform: rotate(135deg);
-		height: 17px;
-		width: 17px;
-		box-shadow: -5px -4px 0 0 grey, -4px -5px 0 0 grey;
-		&:hover{
-			box-shadow: -5px -4px 0 0 $blue, -4px -5px 0 0 $blue;
-		}
+	&__leftarw, &__rightarw{
+		margin-top: -13px;
 	}
 }
 
@@ -175,8 +164,10 @@
 
 	&__service{
 		width: 47.5%;
+		float: left;
+		padding-bottom: 30px;
 	}
-	&__welcome{
+	&__caption{
 		color: $blue;
 		font-weight: bold;
 		font-size: 2.5em;
@@ -213,15 +204,36 @@
 		width: 30%;
 		text-align: center;
 		padding: 10px 0 10px 0;
-		margin-left: 70%;
-		margin-top: -20px;
 		border-radius: 5px;
 		background: linear-gradient(to top, $black, grey);
+		&_position{
+			margin-left: 70%;
+			margin-top: -20px;
+		}
+		&_btn{
+			margin-left: 70%;
+			margin-top: -10px;
+		}
 	}
 	&__roll{
 		text-decoration: none;
 		color: #fff;
 		font-family: Futura-Heavy;
 		display: block;
+	}
+
+	&__news{
+		width: 47.5%;
+		margin-left: 5%;
+		float: right;
+	}
+	&__information{
+		font-family: MyriadPro-Regular;
+		padding-bottom: 55px;
+		box-shadow: 0 9px 20px -15px black;
+		&_shadow{
+			box-shadow: none;
+			padding-bottom: 30px;
+		}
 	}
 }
