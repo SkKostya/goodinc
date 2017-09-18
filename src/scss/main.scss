@@ -161,6 +161,33 @@
 		width: 95%;
 		margin: 0 auto;
 	}
+	
+	&__arrow{
+		position: relative;
+		top: -40px;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 2em;
+		font-weight: bold;
+		padding: 1px 8px 1px 8px;
+		float: right;
+		border: 1px solid #000;
+		&_totop{
+			transform: rotate(90deg);
+			background: linear-gradient(to left, $black, grey);
+		}
+		&_tobottom{
+			transform: rotate(-90deg);
+			background: linear-gradient(to left, $black, grey);
+			left: -5px;
+		}
+		&:hover{
+			color: $blue;
+		}
+	}
+	&__totop,&__tobottom{
+		margin-top: -8px;
+	}
 
 	&__service{
 		width: 47.5%;
