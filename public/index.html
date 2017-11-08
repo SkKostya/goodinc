@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>GoodINC</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="../dist/css/swiper.min.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -18,27 +19,35 @@
 					<li class="header__item"><a href="#" class="header__link">Blog</a></li>
 				</ul>
 				<div class="header__search">
-					<input class="header__input" type="text"placeholder="SEARCH  looking for something?" required>
-					<button class="header__arrow" type="submit"><a href="#"><img src="images/arrow.png"></a></button>
+					<form action="index.html" method="get">
+						<input class="header__input" type="text" placeholder="SEARCH  looking for something?" required>
+						<button class="header__arrow" type="submit"><a href="#"><img src="images/arrow.png"></a></button>
+					</form>
 				</div>
 			</div>
-		
-			<div class="header__computer">
-				<p class="header__exclusive">Exclusive bespoke designs,</br>just for you</p>
-				<p class="header__purchase">Purchase this Template</p>
-			</div>
 
-			<div class="header__page">
-				<button type="submit" class="header__btn header__btn_left"><div class="header__leftarw">&#8249</div></button>
-				<ul class="header__container">
-					<li class="header__roll"></li>
-					<li class="header__roll"></li>
-					<li class="header__roll"></li>
-					<li class="header__roll"></li>
-					<li class="header__roll"></li>
-					<li class="header__roll"></li>
-				</ul>
-				<button type="submit" class="header__btn header__btn_right"><div class="header__rightarw">&#8250</div></button>
+			<!-- Slider main container -->
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"><p class="swiper-container-exclusive">Exclusive bespoke designs,</br>just for you</p><p class="swiper-container-purchase">Purchase this Template</p><img src="images/computer.png"></div>
+					<div class="swiper-slide">Slide 2<p class="swiper-container-exclusive">Exclusive bespoke designs,</br>just for you</p><p class="swiper-container-purchase">Purchase this Template</p></div>
+					<div class="swiper-slide">Slide 3<p class="swiper-container-exclusive">Exclusive bespoke designs,</br>just for you</p><p class="swiper-container-purchase">Purchase this Template</p></div>
+					<div class="swiper-slide">Slide 4<p class="swiper-container-exclusive">Exclusive bespoke designs,</br>just for you</p><p class="swiper-container-purchase">Purchase this Template</p></div>
+					<div class="swiper-slide">Slide 5<p class="swiper-container-exclusive">Exclusive bespoke designs,</br>just for you</p><p class="swiper-container-purchase">Purchase this Template</p></div>
+					<div class="swiper-slide">Slide 6<p class="swiper-container-exclusive">Exclusive bespoke designs,</br>just for you</p><p class="swiper-container-purchase">Purchase this Template</p></div>
+
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"><strong class="swiper-button-arrow">&#8249</strong></div>
+				<div class="swiper-button-next"><strong class="swiper-button-arrow">&#8250</strong></div>
+
+				<!-- If we need scrollbar -->
+				<!--<div class="swiper-scrollbar"></div>-->
 			</div>
 		</header>
 
@@ -46,7 +55,7 @@
 			<div class="main__gradient"></div>
 			<div class="main__text">
 				<div class="main__service">
-					<p class="main__caption">WELCOME</p></br></br>
+					<p class="main__welcome">WELCOME</p></br></br>
 					<p class="main__greytext">Thanks for stopping by at our website!</p></br>
 					<p style="font-family: MyriadPro-Regular;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et lorem purus. Curabitur a condimentum leo. In vel quam ut nulla iaculis varius. Morbi volutpat, ante nec convallis commodo, lectus diam hendrerit orci, et tempor libero lectus cursus lectus. In consequat, augue ut feugiat imperdiet, diam odio commodo mauris, a elementum magna ipsum ac velit. Aliquam nunc risus, mollis luctus volutpat sit amet, convallis dapibus orci.</p></br>
 					<p class="main__greytext">Some of our services...</p>
@@ -67,26 +76,117 @@
 					</div>
 					<div class="main__more main__more_position"><a href="#" class="main__roll">Learn more</a></div>
 				</div>
+
+				<button class="main__arrow main__arrow_totop">
+					<p class="main__totop">&#8249</p>
+				</button>
+				<button class="main__arrow main__arrow_tobottom">
+					<p class="main__tobottom">&#8249</p>
+				</button>
+
+				<p class="main__caption">LATEST NEWS</p>
+				
 				<div class="main__news">
-					<p class="main__caption">LATEST NEWS</p>
-					<div class="main__arrow main__arrow_totop"><p class="main__totop">&#8249</p></div>
-					<div class="main__arrow main__arrow_tobottom"><p class="main__tobottom">&#8249</p></div>
-					</br></br>
-					<p class="main__greytext">Date goes here</p></br>
-					<div class="main__information"><img src="images/jeffo.png" style="float:left;margin-right:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et lorem purus. Curabitur a condimentum leo. In vel quam ut nulla iaculis varius. Morbi volutpat, ante nec convallis commodo, lectus diam hendrerit orci, et tempor libero lectus cursus lectus.
-						<div class="main__more main__more_btn"><a href="#" class="main__roll">Read more</a></div>
-					</div></br></br></br>
-					<p class="main__greytext">Date goes here</p></br>
-					<div class="main__information main__information_shadow"><img src="images/jeffo.png" style="float:left;margin-right:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et lorem purus. Curabitur a condimentum leo. In vel quam ut nulla iaculis varius. Morbi volutpat, ante nec convallis commodo, lectus diam hendrerit orci, et tempor libero lectus cursus lectus.
-						<div class="main__more main__more_btn"><a href="#" class="main__roll">Read more</a></div>
+					<div class="main__skroll">
+						</br>
+						<p class="main__greytext">Date goes here</p></br>
+						<div class="main__information"><img src="images/jeffo.png" style="float:left;margin-right:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et lorem purus. Curabitur a condimentum leo. In vel quam ut nulla iaculis varius. Morbi volutpat, ante nec convallis commodo, lectus diam hendrerit orci, et tempor libero lectus cursus lectus.
+							<div class="main__more main__more_btn">
+								<a href="#" class="main__roll">Read more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="main__skroll">
+						<p class="main__greytext">Date goes here</p></br>
+						<div class="main__information main__information_shadow"><img src="images/jeffo.png" style="float:left;margin-right:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et lorem purus. Curabitur a condimentum leo. In vel quam ut nulla iaculis varius. Morbi volutpat, ante nec convallis commodo, lectus diam hendrerit orci, et tempor libero lectus cursus lectus.
+							<div class="main__more main__more_btn">
+								<a href="#" class="main__roll">Read more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="main__skroll">
+						<p class="main__greytext">Date goes here</p></br>
+						<div class="main__information main__information_shadow"><img src="images/jeffo.png" style="float:left;margin-right:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et lorem purus. Curabitur a condimentum leo. In vel quam ut nulla iaculis varius. Morbi volutpat, ante nec convallis commodo, lectus diam hendrerit orci, et tempor libero lectus cursus lectus.
+							<div class="main__more main__more_btn">
+								<a href="#" class="main__roll">Read more</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__information">
+				<div class="footer__container">
+					<div class="footer__project">
+						<p class="footer__futura">Featured Project</p>
+						<img src="images/footerimg.png" style="border:5px solid #fff;margin-top: 20px;">
+						<div class="footer__more">
+							<a href="#" class="footer__link">View Project</a>
+						</div>
+					</div>
+					<div class="footer__tweet">
+						<p class="footer__futura">Latest Tweets</p>
+						<img src="images/bird.png" style="margin-left: 80%;">
+						<div class="footer__data">Data</br>here</div>
+						<div class="footer__text">
+							Jeff Oakley releases the beautiful new PSD theme, Mystic, to the community.
+						</div></br>
+						<div class="footer__data">Data</br>here</div>
+						<div class="footer__text">
+							Jeff Oakley releases the beautiful new PSD theme, Mystic, to the community.
+						</div>
+					</div>
+					<div class="footer__contacts">
+						<form action="../../firstsite/public/index.html" method="post">
+							<p class="footer__futura">Latest Tweets</p></br>
+							<input class="footer__input" type="text" placeholder="NAME" required>
+							<input class="footer__input" type="text" placeholder="EMAIL" required>
+							<textarea rows="7" class="footer__input footer__input_size" placeholder="COMMENTS"></textarea>
+							<input type="reset" class="footer__submit" value="Reset">
+							<input type="submit" class="footer__submit" value="send">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item"><a href="#" class="footer__link">HOME</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">ABOUT</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">SERVICES</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">OUR WORK</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">CONTACT</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">BLOG</a></li>
+				</ul>
+			</div>
+		</footer>
 
 		<script src="js/main.js"></script>
+	<script src="../dist/js/swiper.min.js"></script>
+	<script>        
+		var mySwiper = new Swiper ('.swiper-container', {
+   	 // Optional parameters
+   		paginationClickable: true,
+      	spaceBetween: 30,
+      	centeredSlides: true,
+      	autoplay: 2500,
+      	loop: true,
+      	autoplayDisableOnInteraction: false,
+    
+   	 // If we need pagination
+   		pagination: '.swiper-pagination',
+    
+   	 // Navigation arrows
+   		nextButton: '.swiper-button-next',
+   		prevButton: '.swiper-button-prev',
+    
+   	 // And if we need scrollbar
+   		//scrollbar: '.swiper-scrollbar',
+ 		})        
+	</script>
 	</div>
 </body>
 </html>

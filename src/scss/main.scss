@@ -7,6 +7,66 @@
 	z-index: 0;
 }
 
+.swiper-container{
+	width: 100%;
+	height: 320px;
+	&-exclusive{
+		color: #32a9e7;
+		font-size: 1.8em;
+		position: absolute;
+		top: 45px;
+		left: 10%;
+	}
+	&-purchase{
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #fff;
+		background-color: $black;
+		padding: 1%;
+		width: 25%;
+		text-align: center;
+		box-shadow: 1px 1px 5px 0 #fff;
+		border-radius: 5px;
+		position: absolute;
+		top: 125px;
+		left: 10.5%;
+	}
+	.swiper-button {
+		&-next,
+		&-prev {
+			font-size: 3em;
+			background-image: none;
+			color: $blue;
+			text-align: center;
+			width: 40px;
+			background-color: $black;
+			height: 40px;
+			border: 1px solid black;
+			box-shadow: 0 0 1px 0.2px #fff;
+			border-radius: 50%;
+			margin-top: 96.5px;
+		}
+		&-arrow{
+			position: relative;
+			width: 20%;
+			top: -9px;
+		}
+	}
+	.swiper-pagination{
+		&-bullet{
+			width: 15px;
+			height: 15px;
+			background-color: $black;
+			border: 5px solid $blue;
+		}
+	}
+}
+.swiper-pagination{
+	height: 43px;
+	padding-top: 19px;
+	background-color: $black;
+}
+
 .header{
 	&__menu{
 		height: 55px;
@@ -32,11 +92,11 @@
 		margin-left: 1%;
 		margin-top: 9px;
 		font-family: Futura;
-		box-shadow: 0 0.8px 3px -1.5px #fff, 0 -1px 3px -0.5px #000;;
+		box-shadow: 0 0.8px 3px -1.5px #fff, 0 -1px 3px -0.5px #000;
 		background: linear-gradient(to top, black, $black);
-			&:hover{
-				background: linear-gradient(to top, $black, black);
-			}
+		&:hover{
+			background: linear-gradient(to top, $black, black);
+		}
 	}
 	&__link{
 		color: #fff;
@@ -72,86 +132,10 @@
 		margin-top: -5px;
 		background: linear-gradient(to top, black, #202020);
 	}
-
-	&__computer{
-		background-image: url(../images/computer.png);
-		height: 250px;
-	}
-	&__exclusive{
-		color: #32a9e7;
-		font-size: 1.8em;
-		padding-top: 45px;
-		padding-left: 10%;
-	}
-	&__purchase{
-		font-size: 1.5em;
-		font-weight: bold;
-		color: #fff;
-		background-color: $black;
-		padding: 1%;
-		width: 25%;
-		text-align: center;
-		box-shadow: 1px 1px 5px 0 #fff;
-		border-radius: 5px;
-		margin-top: 30px;
-		margin-left: 10.5%;
-	}
-
-	&__page{
-		background-color: $black;
-		padding: 2%;
-	}
-	&__container{
-		text-align: center;
-		margin: 0 auto;
-	}
-	&__roll{
-		border-radius: 50%;
-		border: 5px solid grey;
-		display: inline;
-		margin-left: 0.2em;
-		padding: 0% 0.8% 0% 0.8%;
-		&:hover{
-			border: 5px solid $blue;
-		}
-	}
-
-	&__btn{
-		font-size: 3em;
-		color: grey;
-		font-weight: bold;
-		width: 3.5%;
-		background-color: $black;
-		height: 40px;
-		border: 1px solid black;
-		box-shadow: 0 0 1px 0.2px #fff;
-		border-radius: 50%;
-		position: relative;
-		&:focus{
-			outline: 0;
-		}
-		&:hover{
-			color: $blue;
-		}
-		&_left{
-			float: left;
-			top: -12px;
-			width: 4%;
-			margin-left: 2%;
-		}
-		&_right{
-			float: right;
-			top: -27px;
-			width: 4%;
-			margin-right: 2%;
-		}
-	}
-	&__leftarw, &__rightarw{
-		margin-top: -13px;
-	}
 }
 
 .main{
+	margin-top: -10px;
 	&__gradient{
 		height: 60px;
 		background: linear-gradient(to top, white, #c1c0c0);
@@ -161,44 +145,26 @@
 		width: 95%;
 		margin: 0 auto;
 	}
-	
-	&__arrow{
-		position: relative;
-		top: -40px;
-		border-radius: 50%;
-		text-align: center;
-		font-size: 2em;
-		font-weight: bold;
-		padding: 1px 8px 1px 8px;
-		float: right;
-		border: 1px solid #000;
-		&_totop{
-			transform: rotate(90deg);
-			background: linear-gradient(to left, $black, grey);
-		}
-		&_tobottom{
-			transform: rotate(-90deg);
-			background: linear-gradient(to left, $black, grey);
-			left: -5px;
-		}
-		&:hover{
-			color: $blue;
-		}
-	}
-	&__totop,&__tobottom{
-		margin-top: -8px;
-	}
 
 	&__service{
 		width: 47.5%;
 		float: left;
 		padding-bottom: 30px;
 	}
+	&__welcome{
+		color: $blue;
+		font-weight: bold;
+		font-size: 2.5em;
+		font-family: Futura-Heavy;
+	}
 	&__caption{
 		color: $blue;
 		font-weight: bold;
 		font-size: 2.5em;
 		font-family: Futura-Heavy;
+		width: 27%;
+		float: left;
+		margin-left: 4.8%;
 	}
 	&__greytext{
 		color: #ababab;
@@ -249,18 +215,160 @@
 		display: block;
 	}
 
+	&__arrow{
+		position: relative;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 2em;
+		font-weight: bold;
+		padding: 5px 8px 1px 6px;
+		float: right;
+		border: 1px solid #000;
+		&_totop{
+			transform: rotate(90deg);
+			background: linear-gradient(to left, $black, grey);
+		}
+		&_tobottom{
+			transform: rotate(-90deg);
+			background: linear-gradient(to left, $black, grey);
+			left: -15px;
+		}
+		&:hover{
+			color: $blue;
+		}
+		&:focus{
+			outline: none;
+		}
+	}
+	&__totop,&__tobottom{
+		margin-top: -8px;
+	}
+
 	&__news{
 		width: 47.5%;
+		margin-top: 0.3em;
+		height: 450px;
 		margin-left: 5%;
 		float: right;
+		overflow: hidden;
+		word-wrap: normal;
+	}
+	&__skroll{
+		transition: 999999s;
+		padding-bottom: 55px;
+		box-shadow: 0 9px 20px -15px black;
+		margin-top: 2.6em;
+		&:first-child{
+			margin-top: 0;
+		}
 	}
 	&__information{
 		font-family: MyriadPro-Regular;
-		padding-bottom: 55px;
-		box-shadow: 0 9px 20px -15px black;
 		&_shadow{
 			box-shadow: none;
 			padding-bottom: 30px;
 		}
+	}
+}
+
+.main__arrow_totop:active ~ .main__news .main__skroll, .main__arrow_tobottom:active ~ .main__news .main__skroll {transition: 2s linear;}
+.main__arrow_totop:active ~ .main__news .main__skroll {transform: translateY(20em);}
+.main__arrow_tobottom:active ~ .main__news .main__skroll {transform: translateY(-20em);}
+
+.footer{
+	margin-top: 530px;
+	height: 360px;
+	background-color: $black;
+	&__project, &__tweet, &__contacts{
+		width: 30%;
+		float: left;
+		font-family: Futura-Heavy;
+		margin-left: 3%;
+		margin-top: 20px;
+		color: #fff;
+	}
+	&__futura{
+		font-size: 1.2em;
+	}
+	&__more{
+		width: 30%;
+		margin: 20px 0 0 22%;
+		border-radius: 5px;
+		background: linear-gradient(to top, black, $black);
+		padding: 10px 6% 10px 6%;
+		box-shadow: 0 0 1px 0 #fff;
+	}
+	&__link{
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__data{
+		border-radius: 50%;
+		width: 9%;
+		border: 4px solid #fff;
+		color: #fff;
+		padding: 10px 15px 10px 10px;
+		float: left;
+	}
+	&__text{
+		margin-left: 25%;
+		width: 76.5%;
+		font-family: MyriadPro-Regular;
+		line-height: 20px;
+	}
+
+	&__input{
+		margin-top: 10px;
+		background-color: black;
+		box-shadow: 0 0 0.5px 0 #fff;
+		color: #fff;
+		border: none;
+		width: 90%;
+		padding: 5px;
+		font-family: Futura-Heavy;
+		&:focus{
+			outline: 0;
+		}
+	}
+	&__submit{
+		width: 30%;
+		color: #fff;
+		text-align: center;
+		margin: 15px 0 0 10%;
+		border-radius: 5px;
+		background: linear-gradient(to top, black, $black);
+		padding: 5px 0 5px 0;
+		box-shadow: 0 0 0.2px 0 #fff;
+		border: none;
+		&:focus{
+			outline: 0;
+		}
+	}
+
+	&__nav{
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__list{
+		list-style-type: none;
+	}
+	&__item{
+		display: inline;
+		float: left;
+		width: 11%;
+		text-align: center;
+		margin-top: 13px;
+		margin-left: 1%;
+		font-family: Futura-Heavy;
+		font-size: 0.8em;
+		background: none;
+	}
+	&__link{
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		height: 26px;
+		padding-top: 11px;
 	}
 }
