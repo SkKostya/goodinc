@@ -1,5 +1,5 @@
 {
-  "name": "goodinc",
+  "name": "plane",
   "version": "1.0.0",
   "description": "",
   "main": "public/index.html",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "goodinc"
+    "url": "plane"
   },
   "author": "Konstantin",
   "license": "MIT",
